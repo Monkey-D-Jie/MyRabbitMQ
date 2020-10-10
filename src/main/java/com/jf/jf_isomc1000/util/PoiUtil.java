@@ -19,6 +19,7 @@ public class PoiUtil {
      * @param value  值
      */
     public static void createExcelCell(int column, XSSFRow row, XSSFCellStyle style, String value) {
+
         XSSFCell cell = row.createCell(column, XSSFCell.CELL_TYPE_STRING);
         cell.setCellStyle(style);
         cell.setCellValue(value);
