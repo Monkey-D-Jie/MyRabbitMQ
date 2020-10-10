@@ -1,0 +1,4 @@
+day.ftl为日报;
+week.ftl为周报;
+month.ftl为月报;
+userSet.ftl为自定义;[利用display进行隐藏]

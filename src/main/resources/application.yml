@@ -1,0 +1,36 @@
+server:
+  port: 2222
+  servlet:
+    context-path: /cloud
+  tomcat:
+    uri-encoding: UTF-8
+    max-http-post-size: -1
+
+spring:
+    profiles:
+      active: dev
+    servlet:
+      multipart:
+        max-file-size: 20MB
+        max-request-size: 200MB
+    jmx:
+      default-domain: jf_iscem_v21
+      enabled: false
+    jackson:
+      serialization:
+        WRITE_DATES_AS_TIMESTAMPS: true
+mybatis:
+    mapper-locations: classpath:mapping/**/*.xml
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      
+com:
+  jf:
+    projectCode: JF_test
+    mysql:
+          databaseName: jf_mq1
+    mongo:
+          databaseName: jf_mq2
+
+pdf:
+   picpath: E:/test20191029/
